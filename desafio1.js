@@ -1,9 +1,9 @@
 class Usuario {
-    constructor(nombre, apellido, nombreLibro, autor, mascota) {
+    constructor(nombre, apellido, titulo, autor, mascota) {
       this.nombre = nombre;
       this.apellido = apellido;
       this.libros = [{
-        nombreLibro: nombreLibro, 
+        titulo: titulo, 
         autor: autor,}
       ];
       this.mascotas=[mascota];
@@ -24,7 +24,7 @@ class Usuario {
 
     addBook(nombre, autor) {
         let nuevoLibro = {
-            nombreLibro: nombre,
+            titulo: nombre,
             autor: autor
         }
         this.libros.push(nuevoLibro)
@@ -34,7 +34,7 @@ class Usuario {
     getBookName() {
         let valores = Object.values(this.libros);
             for(let i=0; i< valores.length; i++){
-                console.log(valores[i].nombreLibro);
+                console.log(valores[i].titulo);
                 
                    
             }
