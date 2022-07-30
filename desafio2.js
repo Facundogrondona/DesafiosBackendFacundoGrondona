@@ -9,7 +9,7 @@ class contenedor {
      
      save= async (object)=>{
         try {
-            let data = await fs.promises.readFile(this.file,"utf-8")
+            const data = await fs.promises.readFile(this.file,"utf-8")
             let parsedData
 
             try {
@@ -38,8 +38,8 @@ class contenedor {
 
      getById= async (id)=>{
          try {
-             let data = await fs.promises.readFile(this.file,"utf-8");
-             let parsedData = await JSON.parse(data)
+            const data = await fs.promises.readFile(this.file,"utf-8");
+            const parsedData = await JSON.parse(data)
              if(parsedData.find(e=>e.id === id)) {
                 console.log( parsedData.find(e=>e.id === id))
              } else {
@@ -55,8 +55,8 @@ class contenedor {
 
      getAll= async()=>{
          try {
-            let data = await fs.promises.readFile(this.file, "utf-8")
-            let parsedData = await JSON.parse(data)
+            const data = await fs.promises.readFile(this.file, "utf-8")
+            const parsedData = await JSON.parse(data)
            return parsedData
          } catch (error) {
              console.error(error)
@@ -66,11 +66,11 @@ class contenedor {
 
      deleteById= async (id)=>{
         try {
-            let data = await fs.promises.readFile(this.file, "utf-8")
-            let parseData = await JSON.parse(data)
+            const data = await fs.promises.readFile(this.file, "utf-8")
+            const parseData = await JSON.parse(data)
             if (parseData.some(e=>e.id === id)) {
-                let obj = parseData.find(e=>e.id===id)
-                let objPosition = parseData.indexOf(obj)
+                const obj = parseData.find(e=>e.id===id)
+                const objPosition = parseData.indexOf(obj)
                 parseData.splice(objPosition,1)
                 fs.promises.writeFile(this.file, JSON.stringify(parseData, null, 2))
                 console.log('el objeto fue eliminado')
@@ -94,10 +94,10 @@ class contenedor {
 
      getRandomProduct = async()=>{
          try {
-            let data = await fs.promises.readFile(this.file, "utf-8")
-            let parseData = await JSON.parse(data)
-            let RandomIndex= Math.floor(Math.random()* parseData.length)
-            let RandomProduct = parseData[RandomIndex]
+            const data = await fs.promises.readFile(this.file, "utf-8")
+            const parseData = await JSON.parse(data)
+            const RandomIndex= Math.floor(Math.random()* parseData.length)
+            const RandomProduct = parseData[RandomIndex]
             return RandomProduct
          } catch (error) {
              console.error(error)

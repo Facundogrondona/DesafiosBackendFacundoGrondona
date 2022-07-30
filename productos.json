@@ -1,0 +1,26 @@
+[
+    {
+        "title": "Escuadra",
+        "price": 10,
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Squadra_45.jpg/640px-Squadra_45.jpg",
+        "id": 1
+    },
+    {
+        "title": "Calculadora",
+        "price": 1000,
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Casio_fx-85WA_20050529.jpg",
+        "id": 2
+    },
+    {
+        "title": "Teclado",
+        "price": 400,
+        "thumbnail": "https://ar-media.hptiendaenlinea.com/catalog/product/cache/b3b166914d87ce343d4dc5ec5117b502/2/U/2UN30AA-1_T1638827506.png",
+        "id": 3
+    },
+    {
+        "title": "Mouse",
+        "price": 250,
+        "thumbnail": "https://images-na.ssl-images-amazon.com/images/I/51ZuHJXqLwL._AC_SX425_.jpg",
+        "id": 4
+    }
+]
