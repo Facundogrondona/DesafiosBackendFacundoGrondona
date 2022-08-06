@@ -1,0 +1,21 @@
+{
+  "name": "desafio4",
+  "version": "0.0.0",
+  "description": "desarrollo un servidor con las operaciones de get, post, put, delete para hacer el crud de productos",
+  "main": "servidor.js",
+  "scripts": {
+    "start": "nodemon servidor.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Facundogrondona/DesafiosBackendFacundoGrondona.git"
+  },
+  "author": "Facundo Grondona",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}
